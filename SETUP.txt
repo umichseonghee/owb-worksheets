@@ -1,0 +1,44 @@
+PARTICIPANT-ONLY SITE
+Suggested repository: human-led-participants
+Typical URL: https://YOUR-USERNAME.github.io/human-led-participants/
+Shows questions, individual responses, and text/PDF-print downloads. No builder.
+Default page opens Session 1; admin-generated links open their embedded questions.
+
+GITHUB PAGES SETUP
+1. Create a GitHub repository with the name suggested for this folder.
+2. Upload this folder's CONTENTS, including index.html, to the repository root.
+   Do not upload the ZIP itself or an extra enclosing folder. Preserve .nojekyll;
+   create it with Add file > Create new file if hidden by your file picker.
+3. Commit the uploaded files to main.
+4. Settings > Pages > Deploy from a branch > main > /(root) > Save.
+5. Use the exact URL GitHub displays after deployment.
+Public repositories support Pages on GitHub Free. Other repository/account setups
+have different eligibility. No build command, dependencies, secrets, or API keys needed.
+
+DATA AND PRIVACY
+These files contain the original worksheet, not your browser-saved custom worksheets
+or participant answers. Data remains in localStorage in each browser profile.
+Before moving, export each custom worksheet using Share blank worksheet > Download
+template (.json), then import it on the new builder. Download answers separately.
+Moving to a new host does not transfer browser data. Keep the old sites available
+until you have moved what you need. Previously shared links still use the old host.
+Do not upload answers, private template exports, passwords, or other secrets to GitHub.
+Anyone using the same browser profile can access that profile's saved data.
+GitHub project sites under one USERNAME.github.io host share a browser origin;
+other apps at that host can access its localStorage. Separate repositories do not
+provide browser-storage isolation. The three packages use distinct storage keys to
+avoid accidentally mixing libraries, but that is not a security boundary.
+For stronger isolation, use distinct dedicated hostnames/domains.
+There is no central database, answer submission, or synchronization across devices.
+
+ACCESS CONTROL
+Ordinary public GitHub Pages does not protect an admin page with sign-in, even if the
+source repository is private. These files do not recreate the current Sites host's
+owner-only protection. Eligible GitHub Enterprise Cloud organization sites support
+restricted publishing; otherwise authenticated hosting is needed for private admin
+access. A password written into frontend JavaScript would not secure the site.
+
+REFERENCES
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site
